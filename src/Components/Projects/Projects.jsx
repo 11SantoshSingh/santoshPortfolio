@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 // Example: import images (or use external URLs)
 import imgDetector from "../../assets/learningdisabiliy.jpeg";
-import imgValley from "../../assets/valleyVerse.png";
+import imgValley from "../../assets/ValleyVerse.png";
 import imgUrlShortener from "../../assets/UrlProject.png";
 import imgHealix from "../../assets/healix.png";
 const Projects = () => {
