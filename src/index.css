@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+*{
+    scroll-behavior: smooth;
+}
+
+.stars {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  transition: transform 0.2s ease-out; /* smooth movement */
+
+  background-image: 
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1.5px, transparent 1px);
+
+  background-size: 80px 80px, 140px 140px;
+  background-position: 0 0, 20px 20px;
+
+  opacity: 0.4;
+
+  animation: moveStars 80s linear infinite;
+}
+
+/* Small stars */
+.stars::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 40px 40px;
+
+  opacity: 0.5;
+  animation: moveStars1 30s linear infinite;
+}
+
+/* ⭐ Larger stars (with blinking) */
+.stars::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 80px 80px;
+
+  opacity: 0.7;
+
+  /* movement + soft blink */
+  animation: moveStars2 120s linear infinite,
+             twinkle 3s ease-in-out infinite alternate;
+}
+
+/* Movement animations */
+@keyframes moveStars1 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-300px, -500px);
+  }
+}
+
+@keyframes moveStars2 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(200px, -400px);
+  }
+}
+
+/* ✨ Twinkle effect */
+@keyframes twinkle {
+  0% {
+    opacity: 0.4;
+    
+  }
+  100% {
+    opacity: .5;
+    
+  }
+}
+
+/* 🌠 Shooting star container */
+#shooting-stars {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* 🌠 Shooting star */
+.shooting-star {
+  position: absolute;
+  width: 2px;
+  height: 120px;
+
+  background: linear-gradient(white, transparent);
+  opacity: 0.9;
+
+  pointer-events: none;
+}
+
+/* animation */
+@keyframes shoot {
+  0% {
+    transform: translate(0, 0) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-400px, 400px) rotate(-45deg);
+    opacity: 0;
+  }
+}
