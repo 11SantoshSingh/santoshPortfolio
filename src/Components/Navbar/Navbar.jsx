@@ -20,7 +20,7 @@ ${isPurpleTheme ? "bg-[#0c0e15] text-white" : "bg-[#dce3dc] text-black"}`}
           <a href="#About">About</a>
         </li>
         <li className="hover:text-blue-500 cursor-pointer">
-          <a href="#Achievements">Experience</a>
+          <a href="#Experience">Experience</a>
         </li>
         <li className="hover:text-blue-500 cursor-pointer">
           <a href="#Projects">Projects</a>

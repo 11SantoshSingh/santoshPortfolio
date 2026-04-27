@@ -20,7 +20,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row justify-center items-center gap-8">
         {/* Image */}
         <div className={`w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 transition-colors duration-500 
-            ${isPurpleTheme ? "border-white" : "border-black"}`} // 🟣 THEME UPDATED
+            ${isPurpleTheme ? "border-white" : "border-white"}`} // 🟣 THEME UPDATED
         >
           <img
             className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
