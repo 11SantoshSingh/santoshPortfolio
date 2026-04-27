@@ -35,7 +35,7 @@ ${isPurpleTheme ? "bg-black/40" : "bg-white"}`}
             Aspiring Full Stack Developer | Passionate Problem Solver.
           </p>
 <div className="mt-6 flex gap-4 justify-center">
-              <a href="mailto:santoshsingh892324@gmail.com">
+              <a href="#Contact">
                 <button
                   className={`mt-6 text-white py-2.5 px-6 text-sm md:text-lg font-semibold 
                     rounded-3xl ${isPurpleTheme ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white" : 
