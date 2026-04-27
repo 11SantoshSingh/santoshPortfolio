@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full px-6 py-4 md:px-20 flex items-center justify-between relative z-50 transition-colors duration-500
-${isPurpleTheme ? "bg-black text-white" : "bg-[#dce3dc] text-black"}`}
+${isPurpleTheme ? "bg-[#0c0e15] text-white" : "bg-[#dce3dc] text-black"}`}
     >
       {/* Logo */}
       <div className="text-3xl md:text-4xl font-bold">Portfolio</div>

@@ -17,14 +17,14 @@ const Home = () => {
       {/* 🔹 Overlay for readability */}
       <div
         className={`absolute top-0 left-0 w-full h-full -z-10 transition-colors duration-500 
-${isPurpleTheme ? "bg-black/40" : "bg-white"}`}
+${isPurpleTheme ? "bg-[#0c0e15]" : "bg-white"}`}
       ></div>
 
       {/* 🔹 Content */}
       <div
         className={`relative flex flex-col-reverse md:flex-row w-full justify-between items-center 
           px-6 md:px-20 py-10 transition-colors duration-500
-          ${isPurpleTheme ? "text-white" : "text-black"}`} // ✅ Changed: reduced padding to remove extra gap at bottom
+          ${isPurpleTheme ? " bg-[#0c0e15] text-white" : "text-black"}`} // ✅ Changed: reduced padding to remove extra gap at bottom
       >
         {/* Left Section - Text */}
         <div className="w-full md:w-2/3 md:pt-10">

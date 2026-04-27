@@ -13,7 +13,7 @@ const About = () => {
     <div
       id="About"
       className={`shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-6 md:p-12 transition-colors duration-500 
-        ${isPurpleTheme ? "bg-black text-white" : "bg-[#dce3dc] text-black"}`}
+        ${isPurpleTheme ? "bg-[#0c0e15] text-white" : "bg-[#dce3dc] text-black"}`}
     >
 
       <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center">About</h2>

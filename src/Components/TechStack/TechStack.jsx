@@ -27,7 +27,7 @@ const TechStack = () => {
   const { isPurpleTheme } = useTheme();
 
   const cardStyle = isPurpleTheme
-    ? "black text-white"
+    ? "bg-[#0c0e15] text-white"
     : "bg-[#dce3dc] text-black";
 
   return (

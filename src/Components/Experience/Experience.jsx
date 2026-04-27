@@ -9,7 +9,7 @@ const Experience = () => {
     <div
       id="Experience"
       className={`w-full p-10 md:p-24 text-xl transition-colors duration-500 ${
-        isPurpleTheme ? "text-white bg-black" : "text-black bg-[#b0c3b1]"
+        isPurpleTheme ? "bg-[#0c0e15] text-white" : "text-black bg-[#b0c3b1]"
       }`} // ⬅️ updated
     >
       <h1 className="text-2xl md:text-4xl font-bold mb-8">Experience</h1>
@@ -19,7 +19,7 @@ const Experience = () => {
         <div
           className={`w-full flex gap-6 rounded-lg p-4 items-start transition-colors duration-500 ${
             isPurpleTheme
-              ? "bg-slate-950 bg-opacity-45"
+              ? "bg-[#0c0e15] text-white bg-opacity-45"
               : "bg-[#dce3dc] border border-gray-300"
           }`} // ⬅️ updated
         >
