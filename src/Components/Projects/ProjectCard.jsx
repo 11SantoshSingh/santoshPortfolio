@@ -13,13 +13,12 @@ const ProjectCard = ({ title, main, image, codeUrl, liveUrl }) => {
           : "bg-[#e8ece8] text-black border border-gray-300"
       }`}
     >
-      {/* 🔹 Project Image */}
+{/* 🔹 Project Image */}
       <img
         className="w-full h-40 md:h-48 object-cover"
         src={image}
         alt={title}
       />
-
       {/* 🔹 Content */}
       <div className="p-4 flex flex-col justify-between h-full">
         <h3 className="text-lg md:text-xl font-bold mb-2">{title}</h3>
@@ -31,7 +30,6 @@ const ProjectCard = ({ title, main, image, codeUrl, liveUrl }) => {
         >
           {main}
         </p>
-
         {/* 🔹 Buttons */}
         <div className="flex justify-center gap-4 mt-auto flex-wrap">
           

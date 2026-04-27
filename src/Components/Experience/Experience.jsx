@@ -28,7 +28,7 @@ const Experience = () => {
             className={isPurpleTheme ? "text-[#00BFFF]" : "text-blue-600"} // ⬅️ updated
           />
           <div className="text-left">
-            <a href="https://drive.google.com/drive/folders/136AvFYovKUvE1V0hFD4p7_JsPOAwsxP5" target="_blank" rel="noopener noreferrer">
+<a href="https://drive.google.com/drive/folders/136AvFYovKUvE1V0hFD4p7_JsPOAwsxP5" target="_blank" rel="noopener noreferrer">
               <h2 className="text-xl font-semibold">
                 Softpro Summer Internship (July 2025 – September 2025)
               </h2>
@@ -50,8 +50,6 @@ const Experience = () => {
               JavaScript, Bootstrap, SQL, Python, NumPy, Pandas, and Machine
               Learning.
             </p>
-
-            
           </div>
         </div>
       </div>

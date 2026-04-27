@@ -30,12 +30,11 @@ const Projects = () => {
       liveUrl: "https://skill-forge-ai-sand.vercel.app/"
     },
     {
-      // CHANGED: URL Shortener project
       title: "URL Shortener",
-      main: "Built a fast URL shortener with Node.js/Express, MongoDB, and a simple React UI. Supports custom aliases, click tracking, and 301 redirects with validation.", // CHANGED [1]
-      image: imgUrlShortener, // CHANGED: import this asset or use an external URL string [2]
-      codeUrl: "https://github.com/11SantoshSingh/2219559", // CHANGED [1]
-      liveUrl: "https://urlshortener.com" // CHANGED [2]
+      main: "Built a fast URL shortener with Node.js/Express, MongoDB, and a simple React UI. Supports custom aliases, click tracking, and 301 redirects with validation.",
+      image: imgUrlShortener,
+      codeUrl: "https://github.com/11SantoshSingh/2219559",
+      liveUrl: "https://urlshortener.com"
     },
   ];
 

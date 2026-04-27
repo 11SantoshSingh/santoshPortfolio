@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full px-6 py-4 md:px-20 flex items-center justify-between relative z-50 transition-colors duration-500
-        ${isPurpleTheme ? "bg-black text-white" : "bg-[#dce3dc] text-black"}`} // 🟣 THEME UPDATED
+${isPurpleTheme ? "bg-black text-white" : "bg-[#dce3dc] text-black"}`}
     >
       {/* Logo */}
       <div className="text-3xl md:text-4xl font-bold">Portfolio</div>
@@ -31,8 +31,7 @@ const Navbar = () => {
       </ul>
 
       {/* Right section: Theme Toggle + Hamburger */}
-      <div className="flex items-center gap-3 absolute right-6 top-4 md:static md:gap-6">
-
+<div className="flex items-center gap-3 absolute right-6 top-4 md:static md:gap-6">
         {/* Theme Toggle Icon */}
         <div
           className="cursor-pointer text-2xl md:text-3xl"
@@ -41,12 +40,12 @@ const Navbar = () => {
           {isPurpleTheme ? (
             <RiSunLine className="hover:text-yellow-400 transition-colors" /> // 🟣 THEME UPDATED
           ) : (
-            <RiMoonLine className="hover:text-black-400 transition-colors" /> // 🟣 THEME UPDATED
+<RiMoonLine className="hover:text-black-400 transition-colors" />
           )}
         </div>
 
         {/* Hamburger Icon (Mobile only) */}
-        <div className="md:hidden cursor-pointer text-2xl">
+<div className="md:hidden cursor-pointer text-2xl">
           {menuOpen ? (
             <RiCloseLine size={30} onClick={() => setMenuOpen(false)} />
           ) : (
@@ -57,7 +56,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <ul
-        className={`${menuOpen ? "flex" : "hidden"
+className={`${menuOpen ? "flex" : "hidden"
           } flex-col items-center gap-6 absolute top-[70px] left-1/2 transform -translate-x-1/2 w-[90%] max-w-md py-8 rounded-2xl shadow-2xl md:hidden transition-all duration-500
   ${isPurpleTheme
             ? "bg-[#111827]/90 backdrop-blur-lg text-white"

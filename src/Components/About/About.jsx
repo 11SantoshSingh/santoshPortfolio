@@ -13,7 +13,7 @@ const About = () => {
     >
 
       <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center">About</h2>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+<div className="flex flex-col md:flex-row justify-center items-center gap-8">
         {/* Image */}
         <div className={`w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 transition-colors duration-500 
             ${isPurpleTheme ? "border-white" : "border-black"}`} // 🟣 THEME UPDATED

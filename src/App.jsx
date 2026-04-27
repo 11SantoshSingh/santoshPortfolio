@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ThemeContext } from "./ThemeContext";
 import "./App.css";
-import { useEffect } from "react";
+
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
@@ -29,8 +29,10 @@ function App() {
   const startY = Math.random() * window.innerHeight * 0.3;
 
   // Angle in degrees → convert to radians
-  const angleDeg = 20 + Math.random() * 40;
+  const angleDeg = -45; // try -30, -60 etc
   const angle = (angleDeg * Math.PI) / 180;
+
+  
 
   const distance = 400 + Math.random() * 200;
   const duration = 600 + Math.random() * 400;
@@ -66,10 +68,11 @@ function App() {
 
   const interval = setInterval(() => {
     createStar();
-  }, 3000 + Math.random() * 4000); // random delay
+  }, 3000 + Math.random() * 400); // random delay
 
   return () => clearInterval(interval);
 }, []);
+
 
 
   const [isPurpleTheme, setIsPurpleTheme] = useState(true);

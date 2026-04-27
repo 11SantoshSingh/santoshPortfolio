@@ -17,7 +17,7 @@ const Home = () => {
       {/* 🔹 Overlay for readability */}
       <div
         className={`absolute top-0 left-0 w-full h-full -z-10 transition-colors duration-500 
-          ${isPurpleTheme ? "bg-black/40" : "bg-white"}`} // ✅ Changed: lighter overlay for readability
+${isPurpleTheme ? "bg-black/40" : "bg-white"}`}
       ></div>
 
       {/* 🔹 Content */}
@@ -34,8 +34,7 @@ const Home = () => {
           <p className="text-sm md:text-lg tracking-tight mt-4 max-w-lg">
             Aspiring Full Stack Developer | Passionate Problem Solver.
           </p>
-
-          <div className="mt-6 flex gap-4 justify-center">
+<div className="mt-6 flex gap-4 justify-center">
               <a href="mailto:santoshsingh892324@gmail.com">
                 <button
                   className={`mt-6 text-white py-2.5 px-6 text-sm md:text-lg font-semibold 
@@ -61,17 +60,15 @@ const Home = () => {
                 </button>
               </a>
           </div>
-          
-
         </div>
 
         {/* Right Section - Avatar */}
         <div
-          className="w-full md:w-1/3 flex justify-center cursor-pointer" // ✅ Changed: removed mb-6 md:mb-0 to remove extra gap
+          className={`w-full md:w-1/3 flex justify-center cursor-pointer `} // ✅ Changed: removed mb-6 md:mb-0 to remove extra gap
           onClick={toggleImage}
         >
           <img
-            className="w-40 h-40 md:w-72 md:h-72 object-cover rounded-full border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
+            className={`w-40 h-40 md:w-72 md:h-72 object-cover rounded-full border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300`}
             src={currentImage}
             alt="avatar"
           />

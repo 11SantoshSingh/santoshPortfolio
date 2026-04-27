@@ -29,7 +29,7 @@ const Footer = () => {
         <ul className="space-y-4 text-sm md:text-lg text-center md:text-left">
           <li className="flex items-center gap-3">
             <MdOutlineEmail size={22} />
-            <a href="mailto:santoshsingh892324@gmail.com" className="hover:underline">
+<a href="mailto:santoshsingh892324@gmail.com" className="hover:underline">
               santoshsingh8923324@gmail.com
             </a>
           </li>
