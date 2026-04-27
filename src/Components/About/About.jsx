@@ -1,28 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoArrowForward } from "react-icons/io5";
-import deskpic from "../../assets/deskpic.png"; // Adjust the path if needed
+import Chatbot from "../../assets/chatbot.gif"; // Adjust the path if needed
 import { useTheme } from "../../ThemeContext";
 const About = () => {
-  const {isPurpleTheme} = useTheme();
+  const { isPurpleTheme } = useTheme();
+
+
+  //const [reloadKey, setReloadKey] = useState(0);
+
   return (
 
     <div
       id="About"
-          className={`shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-6 md:p-12 transition-colors duration-500 
+      className={`shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-6 md:p-12 transition-colors duration-500 
         ${isPurpleTheme ? "bg-black text-white" : "bg-[#dce3dc] text-black"}`}
     >
 
       <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center">About</h2>
-<div className="flex flex-col md:flex-row justify-center items-center gap-8">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8">
         {/* Image */}
         <div className={`w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 transition-colors duration-500 
             ${isPurpleTheme ? "border-white" : "border-black"}`} // 🟣 THEME UPDATED
         >
           <img
-            className="object-cover w-full h-full  "
-            src={deskpic}
+            className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+            src={Chatbot}
             alt="about"
-            onError={(e) => console.error("Image load error:", e)}
           />
         </div>
         {/* Info List */}
